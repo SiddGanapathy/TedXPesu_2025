@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+.ticket-section {
+    background-color: black;
+    color: white;
+    padding: 4rem 5rem 4rem 4rem;
+    margin: auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-top: 2px solid red;
+    animation: fadeInSection 1.2s ease-out;
+}
+
+.ticket-1 {
+    width: 55%;
+    text-align: left;
+    padding: 20px;
+    animation: fadeInLeft 1.2s ease-out;
+}
+
+.ticket-text-1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    animation: slideInDown 0.8s ease-out;
+}
+
+.ticket-text-3 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    animation: fadeInText 1.5s ease-in;
+}
+
+.ticket-registration-steps {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.1);
+    animation: fadeInRight 1.2s ease-out;
+}
+
+.steps-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: bounceIn 0.8s ease-out;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInSteps 1.5s ease-in;
+}
+
+.steps-list li {
+    background-color: red;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInItem 1s ease-out;
+}
+
+.steps-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Animation keyframes */
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInSteps {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInItem {
+    from {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .ticket-section {
+        background-color: black;
+        color: white;
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+
+        animation: fadeInSection 1.2s ease-out;
+    }
+
+    .ticket-1 {
+        width: 55%;
+        text-align: left;
+        padding: 20px;
+        animation: fadeInLeft 1.2s ease-out;
+    }
+
+    .ticket-text-1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: red;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        animation: slideInDown 0.8s ease-out;
+    }
+
+    .ticket-text-3 {
+        font-size: 18px;
+        line-height: 1.6;
+        color: white;
+        animation: fadeInText 1.5s ease-in;
+    }
+
+    .ticket-1 {
+        width: 90%;
+    }
+
+    .ticket-registration-steps {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(255, 0, 0, 0.1);
+        animation: fadeInRight 1.2s ease-out;
+    }
+
+    .steps-header {
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        animation: bounceIn 0.8s ease-out;
+    }
+
+    .steps-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        animation: fadeInSteps 1.5s ease-in;
+    }
+
+    .steps-list li {
+        background-color: red;
+        color: white;
+        padding: 12px 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: slideInItem 1s ease-out;
+    }
+
+    .steps-list li:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    }
+
+    /* Animation keyframes */
+    @keyframes fadeInSection {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInText {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fadeInSteps {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideInItem {
+        from {
+            transform: translateX(-15px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+}

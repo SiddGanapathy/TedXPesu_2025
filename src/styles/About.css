@@ -1,0 +1,73 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* TEDxEvent.css */
+
+/* Container and Basic Styling */
+.tedx-container {
+    padding: 2rem 5rem 2rem 5rem;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: #ffffff;
+    background-color: black;
+    text-align: left; /* Left-align all text */
+    border-top: 2px solid red;
+}
+
+/* Title Styling */
+.tedx-title, .tedx-title-black {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Reset default margin */
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth slide-in */
+    font-family: 'Montserrat', sans-serif; /* Ensure font applies */
+}
+
+/* Reduces glow for neon text */
+.neon-text {
+    color: #D11A2A;
+    text-shadow: 
+      0 0 5px rgba(255, 69, 69, 0.6),  /* Reduced glow intensity */
+      0 0 10px rgba(255, 69, 69, 0.4); /* Softer glow */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+}
+
+/* Text Content Styling */
+.tedx-text {
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth slide-in */
+    color: white; /* Light gray for readability */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+}
+
+.tedx-title-black {
+    color: white;
+}
+
+/* Scroll-triggered visibility */
+.tedx-section.visible .tedx-title,
+.tedx-section.visible .tedx-text {
+    opacity: 1;
+    transform: translateY(0); /* Slide to original position */
+}
+
+/* Animation on scroll */
+@media (prefers-reduced-motion: no-preference) {
+    .tedx-container {
+        padding: 3rem 2rem 2rem 3rem;
+    }
+    .tedx-section {
+        opacity: 0;
+        transform: translateY(50px); /* Start from below */
+    }
+    .tedx-section.visible {
+        opacity: 1;
+        transform: translateY(0); /* Slide to original position */
+        transition: opacity 1s ease, transform 1s ease;
+    }
+}

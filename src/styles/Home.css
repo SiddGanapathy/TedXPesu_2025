@@ -1,0 +1,20 @@
+body {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.land {
+    background: url('../assets/bg2.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg {
+    background-color: black;
+}

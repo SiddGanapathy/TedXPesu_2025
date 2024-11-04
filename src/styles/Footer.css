@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer-container {
+    background: linear-gradient(135deg, #000000 70%, #ff0000 100%);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1rem 5rem 1rem 5rem;
+    border-top: 2px solid red;
+  }
+  
+  .footer-logo {
+    height: 8rem;
+    width: 15rem;
+  }
+  
+  .footer {
+    display: flex;
+    gap: 5rem;
+    text-align: left;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .footer-text {
+    margin-top: 0.75rem;
+  }
+
+  .footer-text-link {
+    margin-top: 0.75rem;
+    cursor: pointer;
+  }
+
+  .footer-text-link a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footer-text-link:hover {
+    color: red;
+    font-size: medium;
+  }
+  
+  .footer-heading {
+    color: rgb(239, 67, 67);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact-text {
+    margin: 0;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 24px;
+    color: #ddd;
+    margin-top: 20px;
+  }
+  
+  .footer-social-icon {
+    color: #f74747; /* Red for icons */
+    transition: color 0.3s;
+    cursor: pointer;
+    transition: color 100ms ease, transform 300ms ease;
+  }
+
+  .footer-social-icon:hover {
+    color: #880808;
+    transform: scale(1.25);
+  }
+
+  .made-by {
+    margin-top: 2rem;
+    text-align: center;
+    color: #f74747;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: gray;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-logo {
+        height: 6rem;
+        width: 12rem;
+    }
+
+    .footer-section {
+        margin: 0.5rem;
+    }
+    
+    .footer-social-icons {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        height: 7rem;
+        width: 12rem;
+    }
+    
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .footer-social-icons {
+        font-size: 20px;
+        justify-content: center;
+    }
+}
