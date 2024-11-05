@@ -40,11 +40,11 @@ const About = () => {
           <h1 className="tedx-title neon-text">TEDxPESU 2024?</h1>
 
           <p className="tedx-text">
-            TEDx is an independently organized TED event which exposes you to a multitude of ideas. Keeping in mind the TED slogan of 'Ideas worth Spreading ', TEDx PESU 2023 gives you an opportunity to witness live TEDx talks, this time centered around the theme of The Indian Tapestry Of Thought delivered by the greatest of Indian minds.          
+            TEDx is an independently organized TED event which exposes you to a multitude of ideas. Keeping in mind the TED slogan of 'Ideas worth Spreading ', TEDxPESU 2024 gives you an opportunity to witness live TEDx talks, this time centered around the theme of <b>Mosaics of Modernity</b> delivered by the greatest of Indian minds.          
           </p>
 
           <p className='tedx-text'>
-            Join us on the Fourth of November for an evening filled with captivating talks on intriguing topics and much more!!
+            Join us on the <b>9th of November</b> for an evening filled with captivating talks on intriguing topics and much more !!!
           </p>
         </div>
       </div>

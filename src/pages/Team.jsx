@@ -99,11 +99,11 @@ function Team() {
             <h1 className="title">
               <span className="ted">TED</span>
               <span className="tedx">x</span>
-              <span className="pesu"> PESU</span>
+              <span className="pesu">PESU</span>
             </h1>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            Our team is a passionate group of innovators, united by a shared vision to make a positive impact. With diverse skills and unique perspectives, we work together to create exceptional experiences. We bring ideas to life through collaboration and creativity.
+             </p>
           </div>
         </div>
       </div>

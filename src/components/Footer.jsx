@@ -36,7 +36,7 @@ const Footer = () => {
           <a href="mailto:tedxpesu.rr@pes.edu"><FaEnvelope className="footer-social-icon" /></a>
           </div>
         </div>
-        <p className="made-by"><i><b>Website Made By:</b> Hemashree, Disha, Divya, Namritha, Ganapathy, Shravani, Suchetha, Harsimran</i></p>
+        <p className="made-by"><i><b>Website Made By:</b> Hemashree, Disha, Divya, Namritha, Ganapathy, Shravani, Sucheta, Harsimran</i></p>
         <p className="copyright">© {new Date().getFullYear()} TED Conferences, LLC. All rights reserved.</p>
       </div>
     </footer>
