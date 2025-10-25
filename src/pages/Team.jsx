@@ -35,7 +35,7 @@ const teamData = [
   {
     title: "Design",
     mainMembers: ["Saanvi", "Nirmita"],
-    role: "DOMAIN CORE",
+    role: "DESIGN CORE",
     quote: "Connecting Ideas, Creating Experiences.",
     supportingMembers: [
       { name: "Jia Arun" },
@@ -46,7 +46,7 @@ const teamData = [
   {
     title: "C&C",
     mainMembers: ["Mahi", "Sohini", "Avani"],
-    role: "DOMAIN CORE",
+    role: "C&C CORE",
     quote: "Crafting the Visual Symphony.",
     supportingMembers: [
       { name: "Anushka" },
@@ -75,8 +75,8 @@ const teamData = [
   {
     title: "EVM",
     mainMembers: ["Rejith", "Ansh"],
-    role: "THE HEART",
-    quote: "Ensuring team synergy and vision.",
+    role: "EVM CORES",
+    quote: "Orchestrating moments, shaping lasting memories.",
     supportingMembers: [
       { name: "Avantika Kishore" },
       { name: "Piyush Shiv" },
@@ -92,8 +92,8 @@ const teamData = [
   {
     title: "VE",
     mainMembers: ["Madhav"],
-    role: "THE HEART",
-    quote: "Ensuring team synergy and vision.",
+    role: "VE LEAD",
+    quote: "Framing stories, bringing visions to life.",
     supportingMembers: [
       { name: "Vineeth" },
       { name: "Aryan" },
@@ -104,8 +104,8 @@ const teamData = [
   {
     title: "Sponsorship",
     mainMembers: ["Pratyusha"],
-    role: "THE HEART",
-    quote: "Ensuring team synergy and vision.",
+    role: "SPONSORSHIP LEAD",
+    quote: "Building partnerships, fueling possibilities.",
     supportingMembers: [
       { name: "Arjun" },
       { name: "Devansh Tiwari" },
@@ -118,8 +118,8 @@ const teamData = [
   {
     title: "Marketing",
     mainMembers: ["Rithvik", "Arnav"],
-    role: "THE HEART",
-    quote: "Ensuring team synergy and vision.",
+    role: "MARKETING CORES",
+    quote: "Inspiring minds, amplifying voices.",
     supportingMembers: [
       { name: "Anuva Kishore" },
       { name: "Kathi Sibi" },
