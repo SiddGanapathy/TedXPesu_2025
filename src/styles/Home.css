@@ -29,7 +29,7 @@ html {
 }
 
 /* For very small screens */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .land {
         background-position: center top;
         min-height: 100vh;
