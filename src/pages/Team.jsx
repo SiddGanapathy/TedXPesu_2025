@@ -1,135 +1,257 @@
-import React from "react";
-import "../styles/Team.css"
-import ch1 from "../assets/Divyansh Sharma.jpg";
-import ch2 from "../assets/Deepthi_Karani.jpeg";
-import ch3 from "../assets/Kriti_Sujeeth.jpg";
-import cc1 from "../assets/Smruthi S Varier_C&C.jpg";
-import cc2 from "../assets/Chetana_Mital_CNC.jpg";
-import cc3 from "../assets/Diya_Arya_CNC.jpeg";
-import m1 from "../assets/Mariam k - marketing .jpg";
-import m2 from "../assets/Nandini Ramachandra_Marketing.png";
-import ep1 from "../assets/Shreya_EventProduction.jpg";
-import ep2 from "../assets/Ansh-Event Production.jpg";
-import wd from "../assets/Hemashree_M S_WebDevelopment.jpg";
-import ve from "../assets/Jayant Anand_VE.jpg";
-import sp from "../assets/Adith_Reddy_Sponsorship_Head.jpeg";
-import d1 from "../assets/Srijita Das_Design .jpeg";
-import d2 from "../assets/Varuni BR_Design.jpg";
-import team from "../assets/team.jpg";
+import React, { useState } from "react";
+import "../styles/Team.css";
 import Footer from "../components/Footer";
-import { useNavigate } from "react-router-dom";
+import bgImage from "../assets/bg2.jpg";
+
+// Lead images
+import ch1 from "../assets/Diya.jpg";
+import ch2 from "../assets/Mariam.jpg";
+import ch3 from "../assets/Smruthi.png";
+
+// Core/main member images
+import cc1 from "../assets/Mahi.jpg";
+import cc2 from "../assets/Sohini.jpg";
+import cc3 from "../assets/Avani.jpg";
+import m1 from "../assets/Rithvik.jpg";
+import m2 from "../assets/Arnav.PNG";
+import ev1 from "../assets/Rejith.jpg";
+import ev2 from "../assets/Ansh.jpg";
+import wd from "../assets/Siddanth.jpg";
+import ve from "../assets/Madhav.jpg";
+import sp from "../assets/pratyusha.jpg";
+import d1 from "../assets/Saanvi.JPG";
+import d2 from "../assets/Nirmita.jpg";
+
 const teamData = [
   {
-    domain: "STUDENT LEADS",
-    members: [
-      { name: "Deepthi", lastname: "Karani", image: ch2 },
-      { name: "Divyansh", lastname: "Sharma", image: ch1 }, 
-      { name: "Kriti", lastname: "Sujeeth", image: ch3 },
+    title: "Leads",
+    quote: "Guiding the vision, empowering the team.",
+    supportingMembers: [
+      { name: "Diya" },
+      { name: "Mariam" },
+      { name: "Smruthi" },
     ],
   },
   {
-    domain: "CONTENT & CURATION LEADS",
-    members: [
-      { name: "Smruthi", lastname: "S Varier", image: cc1 },
-      { name: "Chetana", lastname: "Mital", image: cc2 },
-      { name: "Diya", lastname: "Arya", image: cc3 },
+    title: "Design",
+    mainMembers: ["Saanvi", "Nirmita"],
+    role: "DOMAIN CORE",
+    quote: "Connecting Ideas, Creating Experiences.",
+    supportingMembers: [
+      { name: "Jia Arun" },
+      { name: "Pragnya Bedathur" },
+      { name: "Vashini" },
     ],
   },
   {
-    domain: "MARKETING LEADS",
-    members: [
-      { name: "Mariam", lastname: "K", image: m1 },
-      { name: "Nandini", lastname: "Ramachandra", image: m2 },
+    title: "C&C",
+    mainMembers: ["Mahi", "Sohini", "Avani"],
+    role: "DOMAIN CORE",
+    quote: "Crafting the Visual Symphony.",
+    supportingMembers: [
+      { name: "Anushka" },
+      { name: "Arya Rajwade" },
+      { name: "Maanasi" },
+      { name: "Malavika" },
+      { name: "Parvathy" },
+      { name: "Raina" },
+      { name: "Rohini" },
+      { name: "Samanyu" },
+      { name: "Sathivik Rao" },
+      { name: "Tanvi" },
+      { name: "Tarunika" },
     ],
   },
   {
-    domain: "EVENT PRODUCTION LEADS",
-    members: [
-      { name: "Shreya", lastname: "", image: ep1 },
-      { name: "Ansh", lastname: "", image: ep2 },
+    title: "Web Development",
+    mainMembers: ["Siddanth"],
+    role: "TECH LEAD",
+    quote: "Turning ideas into code.",
+    supportingMembers: [
+      { name: "Harsimran Kaur" },
+      { name: "Suchetha" },
     ],
   },
   {
-    domain: "DESIGN LEADS",
-    members: [
-      { name: "Srijita", lastname: "Das", image: d1 },
-      { name: "Varuni", lastname: "B R", image: d2 },
+    title: "EVM",
+    mainMembers: ["Rejith", "Ansh"],
+    role: "THE HEART",
+    quote: "Ensuring team synergy and vision.",
+    supportingMembers: [
+      { name: "Avantika Kishore" },
+      { name: "Piyush Shiv" },
+      { name: "Sharvani" },
+      { name: "Shivangi" },
+      { name: "Shriya M" },
+      { name: "Syeda Fathima" },
+      { name: "Terrance Chris" },
+      { name: "Varsha" },
+      { name: "Yatin Prabhakar" },
     ],
   },
   {
-    domain: "WEB DEVELOPMENT LEAD",
-    members: [
-      { name: "Hemashree", lastname: "M S", image: wd },
+    title: "VE",
+    mainMembers: ["Madhav"],
+    role: "THE HEART",
+    quote: "Ensuring team synergy and vision.",
+    supportingMembers: [
+      { name: "Vineeth" },
+      { name: "Aryan" },
+      { name: "Kushal" },
+      { name: "Nandan" },
     ],
   },
   {
-    domain: "VIDEO EDITING LEAD",
-    members: [
-      { name: "Jayant", lastname: "Anand", image: ve },
+    title: "Sponsorship",
+    mainMembers: ["Pratyusha"],
+    role: "THE HEART",
+    quote: "Ensuring team synergy and vision.",
+    supportingMembers: [
+      { name: "Arjun" },
+      { name: "Devansh Tiwari" },
+      { name: "Harsha Vardhana" },
+      { name: "Manya Manjunatha" },
+      { name: "Sidharth Rao" },
+      { name: "Sriram" },
     ],
   },
   {
-    domain: "SPONSORSHIP LEAD",
-    members: [
-      { name: "Adith", lastname: "Reddy", image: sp },
+    title: "Marketing",
+    mainMembers: ["Rithvik", "Arnav"],
+    role: "THE HEART",
+    quote: "Ensuring team synergy and vision.",
+    supportingMembers: [
+      { name: "Anuva Kishore" },
+      { name: "Kathi Sibi" },
+      { name: "Meghana Sridhar" },
+      { name: "Prajwal N" },
+      { name: "Sai Sushantha" },
+      { name: "Samhita Rao" },
+      { name: "Saupriya S Y" },
+      { name: "Sushma Raj" },
+      { name: "Vaishnavi PM" },
+      { name: "Vivek Mysore" },
     ],
   },
 ];
 
-function Team() {
-  const navigate = useNavigate();
+const imageMap = {
+  Diya: ch1,
+  Mariam: ch2,
+  Smruthi: ch3,
+  Siddanth: wd,
+  Saanvi: d1,
+  Nirmita: d2,
+  Mahi: cc1,
+  Sohini: cc2,
+  Avani: cc3,
+  Rejith: ev2,
+  Ansh: ev1,
+  Madhav: ve,
+  Pratyusha: sp,
+  Rithvik: m1,
+  Arnav: m2,
+};
 
-  const goToHome = () => {
-    navigate("/"); // navigate to the home page
-  };
+const Team = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
+  const getMemberImage = (memberName) => imageMap[memberName] || null;
 
   return (
-    <div className="team-page" id="team">
-      <button className="back-to-home" onClick={goToHome}>
-      &#x2190; &nbsp; Back to Home
-      </button>
-      <div className="background">
-      <div className="overlay">
-        <div className="content">
-          <div className="image-sec">
-            <img src={team} alt="The Team" className="image" />
-            <p className="subtext">TEDxPESU Team, 2023</p>
-          </div>
-          <div className="side-text">
-            <h1 className="title">
-              <span className="ted">TED</span>
-              <span className="tedx">x</span>
-              <span className="pesu">PESU</span>
-            </h1>
-            <p className="text">
-            Our team is a passionate group of innovators, united by a shared vision to make a positive impact. With diverse skills and unique perspectives, we work together to create exceptional experiences. We bring ideas to life through collaboration and creativity.
-             </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className="team-page" style={{backgroundImage: `url(${bgImage})`}}>
+      <header className="team-header">
+        <div className="header-glow"></div>
+        <h1>Meet The Team</h1>
+        <p className="header-subtitle">Visionaries & Doers</p>
+        <div className="header-underline"></div>
+      </header>
 
-      <div className="team-section">
-      {teamData.map((domain, index) => (
-        <div key={index} className="domain-group">
-          <h2 className="domain-name">{domain.domain}</h2>
-          <div className="members-list">
-            {domain.members.map((member, index) => (
-              <div key={index} className="team-member">
-                <img src={member.image} alt={member.name} className="profile-pic" />
-                <div className="member-info">
-                  <p className="member-name">{member.name}</p>
-                  <p className="member-lastname">{member.lastname}</p>
+      <div className="team-content-wrapper">
+        {teamData.map((section, sectionIndex) => (
+          <section
+            key={sectionIndex}
+            className={`team-section section-animation`}
+            style={{ animationDelay: `${sectionIndex * 0.1}s` }}
+          >
+            <div className="domain-header">
+              <div className="domain-accent-bar"></div>
+              <h2 className="domain-title">{section.title}</h2>
+            </div>
+
+            {section.title === "Leads" ? (
+              <div className="leads-grid">
+                {section.supportingMembers.map((member, i) => (
+                  <div
+                    key={i}
+                    className={`lead-card ${hoveredCard === `lead-${i}` ? 'hovered' : ''}`}
+                    onMouseEnter={() => setHoveredCard(`lead-${i}`)}
+                    onMouseLeave={() => setHoveredCard(null)}
+                  >
+                    <div className="lead-photo-wrapper">
+                      <div className="lead-photo-glow"></div>
+                      <img
+                        src={getMemberImage(member.name)}
+                        alt={member.name || "Team Member"}
+                        className="lead-photo"
+                      />
+                    </div>
+                    <p className="lead-name">{member.name}</p>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="section-content-grid">
+                {section.mainMembers && (
+                  <div className="main-member-area">
+                    <div className="core-members-grid">
+                      {section.mainMembers.map((member, i) => (
+                        <div
+                          key={i}
+                          className={`core-member-card ${hoveredCard === `core-${sectionIndex}-${i}` ? 'hovered' : ''}`}
+                          onMouseEnter={() => setHoveredCard(`core-${sectionIndex}-${i}`)}
+                          onMouseLeave={() => setHoveredCard(null)}
+                        >
+                          <img
+                            src={getMemberImage(member)}
+                            alt={member || "Team Member"}
+                            className="core-member-photo"
+                          />
+                          <p className="core-member-name">{member}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="main-caption">
+                      {section.role && (
+                        <p className="role-label">{section.role}</p>
+                      )}
+                      {section.quote && (
+                        <p className="quote">"{section.quote}"</p>
+                      )}
+                    </div>
+                  </div>
+                )}
+                <div className="supporting-members-grid">
+                  {section.supportingMembers.map((member, idx) => (
+                    <div
+                      key={idx}
+                      className={`small-member-card ${hoveredCard === `sup-${sectionIndex}-${idx}` ? 'hovered' : ''}`}
+                      onMouseEnter={() => setHoveredCard(`sup-${sectionIndex}-${idx}`)}
+                      onMouseLeave={() => setHoveredCard(null)}
+                    >
+                      <p className="small-member-name">{member.name}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-    <Footer/>
+            )}
+          </section>
+        ))}
+      </div>
+
+      <div className="team-page-footer-space"></div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default Team;

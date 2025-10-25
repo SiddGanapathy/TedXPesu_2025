@@ -26,9 +26,9 @@ const Footer = () => {
 
         <ul className="footer-section">
           <li className="footer-heading">Contact</li>
-          <li className="footer-text"><b>Divyansh Sharma:</b> 96850 22154</li>
-          <li className="footer-text"><b>Deepthi:</b> 97414 00645</li>
-          <li className="footer-text"><b>Kriti:</b> 77600 83769</li>
+          <li className="footer-text"><b>Smruthi:</b> 90192 63571</li>
+          <li className="footer-text"><b>Mariam:</b> 63605 82746</li>
+          <li className="footer-text"><b>Diya:</b> 83680 75875</li>
           </ul>
           <div className="footer-social-icons">
           <a href="https://www.instagram.com/tedxpesu/" target="_blank" rel="noopener noreferrer"><FaInstagram className="footer-social-icon" /></a>
@@ -36,7 +36,7 @@ const Footer = () => {
           <a href="mailto:tedxpesu.rr@pes.edu"><FaEnvelope className="footer-social-icon" /></a>
           </div>
         </div>
-        <p className="made-by"><i><b>Website Made By:</b> Hemashree, Disha, Divya, Namritha, Ganapathy, Shravani, Sucheta, Harsimran</i></p>
+        <p className="made-by"><i><b>Website Made By:</b> Hemashree, Disha, Divya, Namritha, Ganapathy, Shravani, Sucheta, Harsimran </i></p>
         <p className="copyright">© {new Date().getFullYear()} TED Conferences, LLC. All rights reserved.</p>
       </div>
     </footer>

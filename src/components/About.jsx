@@ -37,14 +37,14 @@ const About = () => {
         {/* Second Section */}
         <div className="tedx-section" ref={(el) => sectionsRef.current[1] = el}>
           <h1 className="tedx-title-black" style={{ textAlign: "left" }}>What is</h1>
-          <h1 className="tedx-title neon-text">TEDxPESU 2024?</h1>
+          <h1 className="tedx-title neon-text">TEDxPESU 2025?</h1>
 
           <p className="tedx-text">
-            TEDx is an independently organized TED event which exposes you to a multitude of ideas. Keeping in mind the TED slogan of 'Ideas worth Spreading ', TEDxPESU 2024 gives you an opportunity to witness live TEDx talks, this time centered around the theme of <b>Mosaics of Modernity</b> delivered by the greatest of Indian minds.          
+            TEDx is an independently organized TED event which exposes you to a multitude of ideas. Keeping in mind the TED slogan of 'Ideas worth Spreading ', TEDxPESU 2025 gives you an opportunity to witness live TEDx talks, this time centered around the theme of <b>Tessellations of Time</b> delivered by the greatest of Indian minds.          
           </p>
 
           <p className='tedx-text'>
-            Join us on the <b>9th of November</b> for an evening filled with captivating talks on intriguing topics and much more !!!
+            Join us on the <b>15th of November</b> for an evening filled with captivating talks on intriguing topics and much more !!!
           </p>
         </div>
       </div>
