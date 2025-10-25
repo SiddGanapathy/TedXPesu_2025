@@ -35,7 +35,7 @@ const teamData = [
   {
     title: "Design",
     mainMembers: ["Saanvi", "Nirmita"],
-    role: "DESIGN CORE",
+    role: "DESIGN CORES",
     quote: "Connecting Ideas, Creating Experiences.",
     supportingMembers: [
       { name: "Jia Arun" },
@@ -46,7 +46,7 @@ const teamData = [
   {
     title: "C&C",
     mainMembers: ["Mahi", "Sohini", "Avani"],
-    role: "C&C CORE",
+    role: "C&C CORES",
     quote: "Crafting the Visual Symphony.",
     supportingMembers: [
       { name: "Anushka" },
