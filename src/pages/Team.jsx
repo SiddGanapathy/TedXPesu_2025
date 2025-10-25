@@ -69,7 +69,7 @@ const teamData = [
     quote: "Turning ideas into code.",
     supportingMembers: [
       { name: "Harsimran Kaur" },
-      { name: "Suchetha" },
+      { name: "Sucheta" },
     ],
   },
   {
