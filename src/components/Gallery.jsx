@@ -65,7 +65,7 @@ const Gallery = () => {
             key={i}
             onClick={() => setActiveIndex(i)}
           >
-            <img src={src} alt={`Gallery ${i + 1}`} />
+            <img src={src} alt={`Gallery ${i + 1}`} loading="lazy" />
           </div>
         ))}
       </div>

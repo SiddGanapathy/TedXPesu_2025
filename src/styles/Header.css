@@ -30,7 +30,7 @@
     text-decoration: none;
 }
 
-.list-home, .list-about, .list-speakers, .list-team {
+.list-home, .list-about, .list-speakers, .list-team,.list-2024 {
     transition: font-weight 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
@@ -39,7 +39,7 @@
     color: inherit;
 }
 
-.list-home:hover, .list-about:hover, .list-speakers:hover, .list-team:hover {
+.list-home:hover, .list-about:hover, .list-speakers:hover, .list-team:hover, .list-2024:hover{
     font-weight: bold;
     transform: scale(1.05);
 }
