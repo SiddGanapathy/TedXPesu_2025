@@ -2,56 +2,19 @@ body {
     padding: 0px !important;
     margin: 0px !important;
     background-color: black;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
+  }
+  
 
 .land {
     background: url('../assets/bg2.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* Parallax effect on desktop */
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-/* Ensure background stays visible on mobile */
-@media (max-width: 768px) {
-    .land {
-        background-attachment: scroll; /* Better performance on mobile */
-        background-position: center center;
-        background-size: cover;
-    }
-}
-
-/* For very small screens */
-@media (max-width: 400px) {
-    .land {
-        background-position: center top;
-        min-height: 100vh;
-    }
-}
-
-/* For tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .land {
-        background-attachment: scroll; /* Better for tablets */
-    }
-}
-
-/* For large screens */
-@media (min-width: 1920px) {
-    .land {
-        background-size: cover;
-        background-position: center center;
-    }
 }
 
 .bg {
-    background-color: black;
-    width: 100%;
+    background-color: rgb(0, 0, 0);
 }
