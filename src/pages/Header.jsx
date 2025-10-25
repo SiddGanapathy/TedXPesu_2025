@@ -13,6 +13,7 @@ const Header = () => {
               <li className='list-about'><a href="#about">About</a></li>
               <li className='list-speakers'><a href="#speakers">Speakers</a></li>
               <li className='list-team'><a href="/team">Team</a></li>
+              <li className='list-2024'><a href="/2024">2024</a></li>
             </ul>
           </div>
         </div>

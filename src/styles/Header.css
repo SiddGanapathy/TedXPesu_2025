@@ -78,15 +78,26 @@
 }
 
 @media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
     .ted-logo {
-        height: 10rem;
-        width: 18rem;
+        height: 8rem;
+        width: 15rem;
     }
 
     .list-items {
-        display: none;
+            flex-direction: row;  
+        flex-wrap: wrap;      
+        gap: 1rem;            
+        font-size: 0.85rem;   
+        padding: 0;           
+        justify-content: center; 
+
     }
-    
     .header-main {
         position: relative;
     }
