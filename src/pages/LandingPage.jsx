@@ -6,7 +6,7 @@ import bg2 from "../assets/bg2.jpg";
 const LandingPage = () => {
   const event = {
     title: "TEDxPESU 2025",
-    theme: "Tesselations Of Time",
+    theme: "Tessellations Of Time",
     ctaText: "Register Now",
     eventTag: "Exclusive Annual Event",
   };
