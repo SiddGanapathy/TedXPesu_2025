@@ -1,18 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Speakers.css';
-// NOTE: Image imports are implicitly used but not shown in your snippet.
+import speaker1 from "../assets/Vivek.png";
+import speaker2 from "../assets/Virupakshappa.png";
+import speaker3 from "../assets/Nidhi.png";
 
-// 🛑 IMPORTANT: Speaker data is cleared to force the 'REVEALING SOON' message
 const data = {
-  speakers: [], // Empty array to show 'REVEALING SOON'
-  performers: [], // Empty array to show 'REVEALING SOON'
+  speakers: [
+    {
+      name: 'VIVEK VIJAYAKUMARAN',
+      image: speaker1,
+      description: 'Vivek Vijayakumaran is a multifaceted theatre artist with over 15 years of experience in acting, directing, training, and creating innovative performances. He has trained under legends like Padma Bhushan Heisnam Kanhailal and Guru G. Venu, as well as Italy’s famed Workcenter of Jerzy Grotowski and Thomas Richards. He is the recipient of the INLAKS India Theatre Award (2012) and also featured among Forbes India’s “12 boundary-pushing theatre innovators” (2015).As a director, Vivek has helmed productions like Imagine a Room, Just Hiss (children’s theatre), and the non-verbal piece IT IS YOU. His work has been supported by organisations including Arts Universe, the India-Sri Lanka Foundation, and the Ratan Tata Travel Grant. His performances include BHIMA, Girish Karnad’s Yayati, Bali – The Sacrifice, and many more. He currently leads Our Theatre Collective and Our Theatre Studio, nurturing experimental performance and actor training.',
+    },
+    {
+      name: 'VIRUPAKSHAPPA HOVALE',
+      image: speaker2,
+      description: 'Virupakshappa K. Hovale holds a Bachelor’s degree in Electrical and Electronics Engineering from Mysore University and has completed management and innovation programs from XIM Bhubaneswar, IIM Kashipur, and EMERITUS. He is currently pursuing his Doctorate at Golden Gate University, San Francisco.He has been in the industry navigating through various functions from Process Industry, Discrete Manufacturing. With over 30 years of experience in industrial automation, robotics, IoT, and energy systems, he has driven growth across India, South Asia, and the APAC region. Author of the bestseller Unboxing Creativity, he promotes the “RID Formula”, Reinvention, Innovation, and Design Thinking. He currently leads the Industrial Robotics & Automation segment at Larsen & Toubro.',
+    },
+    {
+      name: 'NIDHI SRIVATSA',
+      image: speaker3,
+      description: 'Nidhi Srivatsa is an Assistant Professor of Law at PES University whose work elegantly bridges intellectual property, cultural heritage, and wellness practices. She holds a B.A. LL.B and an LL.M in Intellectual Property & Trade Law from Christ (Deemed to be University) and is pursuing her Ph.D. in Law. Recognized as Best Paper Presenter at IIT Kharagpur, HNLU Raipur, and MNLU Aurangabad, she actively speaks on IP rights, culture, and legal education reform.A certified yoga instructor from SVYASA Yoga University with over a decade of experience, Nidhi has led international workshops on mindfulness and breathwork. As a National Level Yoga Referee, she seamlessly blends law, wellness, and culture to foster innovation grounded in authenticity and inclusivity.',
+    },
+  ], 
+  performers: [], 
 };
 
 const Speakers = () => {
   const [selectedPerson, setSelectedPerson] = useState(null);
-  
-  // These variables are now used in the conditional checks below.
-  const [speakersAnnounced] = useState(false); 
+ 
+  const [speakersAnnounced] = useState(true); 
   const [performersAnnounced] = useState(false); 
 
   const handleImageClick = (person) => {
@@ -23,7 +39,6 @@ const Speakers = () => {
     setSelectedPerson(null);
   };
 
-  // 💡 HELPER FUNCTION: To wrap each character for the sequential animation
   const renderRevealingText = (text) => {
     return text.split(' ').map((word, wordIndex) => (
       <span key={wordIndex} className="word-wrapper">
@@ -31,7 +46,6 @@ const Speakers = () => {
           <span
             key={charIndex}
             className="char-reveal"
-            // Delay based on word and character index for sequence
             style={{ animationDelay: `${wordIndex * 0.15 + charIndex * 0.03}s` }}
           >
             {char}
@@ -99,6 +113,7 @@ const Speakers = () => {
       )}
       
       {/* -------------------- POPUP SECTION -------------------- */}
+      
       {selectedPerson && (
         <div className="popup-fullscreen">
           <div className="popup-overlay" onClick={handleClosePopup}></div>
@@ -106,7 +121,9 @@ const Speakers = () => {
             <button className="close-button" onClick={handleClosePopup}>
               &#x2190;
             </button>
-            <img src={selectedPerson.image} alt={selectedPerson.name} className="popup-image" />
+            <div className="popup-image-container">
+              <img src={selectedPerson.image} alt={selectedPerson.name} className="popup-image" />
+            </div>
             <div className="popup-description">
               <h2 className="speaker-name">{selectedPerson.name}</h2>
               <p>{selectedPerson.description}</p>
@@ -114,7 +131,6 @@ const Speakers = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };

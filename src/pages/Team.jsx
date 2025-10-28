@@ -57,7 +57,7 @@ const teamData = [
       { name: "Raina" },
       { name: "Rohini" },
       { name: "Samanyu" },
-      { name: "Sathivik Rao" },
+      { name: "Sathvik Rao" },
       { name: "Tanvi" },
       { name: "Tarunika" },
     ],
