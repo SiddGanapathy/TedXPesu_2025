@@ -3,6 +3,7 @@ import '../styles/Speakers.css';
 import speaker1 from "../assets/Vivek.png";
 import speaker2 from "../assets/Virupakshappa.png";
 import speaker3 from "../assets/Nidhi.png";
+import speaker4 from "../assets/Pooja.png";
 
 const data = {
   speakers: [
@@ -20,6 +21,11 @@ const data = {
       name: 'NIDHI SRIVATSA',
       image: speaker3,
       description: 'Nidhi Srivatsa is an Assistant Professor of Law at PES University whose work elegantly bridges intellectual property, cultural heritage, and wellness practices. She holds a B.A. LL.B and an LL.M in Intellectual Property & Trade Law from Christ (Deemed to be University) and is pursuing her Ph.D. in Law. Recognized as Best Paper Presenter at IIT Kharagpur, HNLU Raipur, and MNLU Aurangabad, she actively speaks on IP rights, culture, and legal education reform.A certified yoga instructor from SVYASA Yoga University with over a decade of experience, Nidhi has led international workshops on mindfulness and breathwork. As a National Level Yoga Referee, she seamlessly blends law, wellness, and culture to foster innovation grounded in authenticity and inclusivity.',
+    },
+    {
+      name: 'POOJA SALWAN',
+      image: speaker4,
+      description:'Pooja Maheshwari Salwan’s career is a story of transformation, spanning from the world of fashion to the world of education. At first glance they seem worlds apart, but for her, both are about the same thing: shaping personality and evoking confidence. In fashion, she helped people express themselves through what they wore.In education, she works for Executive Education, helping companies upskill, empower their teams, and lead with purpose.A lifelong learner, she has studied at SRCC, ISB, NYU, and Imperial, gathering experiences that sharpened her global outlook and strategic thinking. Today, she blends creativity with insight to inspire corporates to stand out with substance.',
     },
   ], 
   performers: [], 
