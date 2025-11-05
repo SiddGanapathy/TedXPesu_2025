@@ -4,6 +4,8 @@ import speaker1 from "../assets/Vivek.png";
 import speaker2 from "../assets/Virupakshappa.png";
 import speaker3 from "../assets/Nidhi.png";
 import speaker4 from "../assets/Pooja.png";
+import speaker5 from "../assets/Deepthi.png";
+import speaker6 from "../assets/Vijay.png";
 
 const data = {
   speakers: [
@@ -26,6 +28,16 @@ const data = {
       name: 'POOJA SALWAN',
       image: speaker4,
       description:'Pooja Maheshwari Salwan’s career is a story of transformation, spanning from the world of fashion to the world of education. At first glance they seem worlds apart, but for her, both are about the same thing: shaping personality and evoking confidence. In fashion, she helped people express themselves through what they wore.In education, she works for Executive Education, helping companies upskill, empower their teams, and lead with purpose.A lifelong learner, she has studied at SRCC, ISB, NYU, and Imperial, gathering experiences that sharpened her global outlook and strategic thinking. Today, she blends creativity with insight to inspire corporates to stand out with substance.',
+    },
+    {
+      name: 'Dr. Deepti Navaratna',
+      image: speaker5,
+      description:'Dr. Deepti Navaratna is a neuroscientist and musician whose research bridges cognitive neuroscience, music cognition, and the humanities, exploring how the brain encodes sound, rhythm, and meaning. She earned her Ph.D. in Neuroscience from the University of New Mexico (2008) and subsequently served as an Assistant Neuroscientist at Harvard Medical School and Massachusetts General Hospital (2008–2013).Currently, as the T.V. Raman Pai Chair Professor at the National Institute of Advanced Studies, her work focuses on neurohumanities - the scientific study of meaning-making in the brain through symbolic systems. Furthermore, she served as the Executive and Regional Director of the Indira Gandhi National Centre for the Arts (IGNCA), Bengaluru (2016–2021), leading programs on Indian knowledge systems. Her career is globally recognized for its rare synthesis of scientific rigor and cultural depth, exemplified by distinctions like the Clore International Fellowship.',
+    },
+    {
+      name: 'Dr. Vijaygovindarajan',
+      image: speaker6,
+      description:'Dr. D. VijayaGovindarajan completed his undergraduate and E.N.T. post-graduate education at Sri Devaraj Urs Medical College, Kolar. He currently serves as an honorary doctor at Government Vellore Medical College and is a consultant at Mother India ENT Clinic, Vellore.As a professional in the field, he is renowned for his efforts to simplify the complex subjects of E.N.T. using sketch diagrams and hand models. Passionate about making E.N.T. easy to grasp, he shares his knowledge by giving lectures nationally and internationally. Additionally, he actively serves in rural areas to ensure that even remote communities benefit from specialty consultations. Coming from a family rooted in public transport, he continues a 30-year legacy of community service.',
     },
   ], 
   performers: [], 
