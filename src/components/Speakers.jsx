@@ -4,7 +4,7 @@ import speaker1 from "../assets/Vivek.png";
 import speaker2 from "../assets/Virupakshappa.png";
 import speaker3 from "../assets/Nidhi.png";
 import speaker4 from "../assets/Pooja.png";
-import speaker5 from "../assets/Deepthi.png";
+import speaker5 from "../assets/Deepti.png";
 import speaker6 from "../assets/Vijay.png";
 
 const data = {
