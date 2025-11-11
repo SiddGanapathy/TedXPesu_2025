@@ -6,6 +6,8 @@ import speaker3 from "../assets/Nidhi.png";
 import speaker4 from "../assets/Pooja.png";
 import speaker5 from "../assets/Deepti.png";
 import speaker6 from "../assets/Vijay.png";
+import performer1 from "../assets/Sanskriti.png";
+import performer2 from "../assets/Keys.png";
 
 const data = {
   speakers: [
@@ -40,14 +42,28 @@ const data = {
       description:'Dr. D. VijayaGovindarajan completed his undergraduate and E.N.T. post-graduate education at Sri Devaraj Urs Medical College, Kolar. He currently serves as an honorary doctor at Government Vellore Medical College and is a consultant at Mother India ENT Clinic, Vellore.As a professional in the field, he is renowned for his efforts to simplify the complex subjects of E.N.T. using sketch diagrams and hand models. Passionate about making E.N.T. easy to grasp, he shares his knowledge by giving lectures nationally and internationally. Additionally, he actively serves in rural areas to ensure that even remote communities benefit from specialty consultations. Coming from a family rooted in public transport, he continues a 30-year legacy of community service.',
     },
   ], 
-  performers: [], 
+  performers: [
+    {
+      name: 'Team Sanskriti',
+      image: performer1,
+      description:'Team Sanskriti, founded in 2004, is the Indian contemporary dance team of PES University.What makes them stand out is their unique style — mixing the rich, traditional dance forms of India with a hint of modernity. Their performances and choreography honour the cultural roots of our country while adding creative energy that reflects India’s wide range of dance styles. By blending tradition with innovation, Team Sanskriti not only showcases impressive talent but also celebrates the vibrant and diverse cultural spirit of India.',
+    },
+    {
+      name: 'Satvik RK & Pranav Prabhakar',
+      image: performer2,
+      description: `
+      Satvik RK is a student of Computer Science at PES University. Hailing from a family of musicians, he has been training in the field of Carnatic Music from the age of 5. Previously training under the tutelage of Vid. KV Krishnaprasad, he is presently under the able guidance of Vid. Abhishek Shridhar. A runner-up in the prestigious annual Gayana Samaja competitions, he has also placed as one of the finalists from Bengaluru in the Guruguhaamrta series of competitions. He is currently serving as the head of the Music Club of PES, one of the oldest clubs on campus and has performed there at several of the headlining events at college. He is also the lead vocalist of Youth in Asia, a rock band.
+
+      Pranav Prabhakar is a second-year Computer Science student at PES University. He has seventeen years of experience in both Carnatic and Western music. A multi-instrumentalist, he plays the piano, guitar, flute, tabla, drums, and more. Pranav is also a music producer, having written and worked on over 100 songs for various clients. He served as the Assistant in Music Direction for the movie *Kenda* (2024), now streaming on Amazon Prime Video. Additionally, Pranav is a professional beatboxer who placed 10th in the world in the U18 category, representing India.`,
+    }
+  ], 
 };
 
 const Speakers = () => {
   const [selectedPerson, setSelectedPerson] = useState(null);
  
   const [speakersAnnounced] = useState(true); 
-  const [performersAnnounced] = useState(false); 
+  const [performersAnnounced] = useState(true); 
 
   const handleImageClick = (person) => {
     setSelectedPerson(person);
@@ -144,7 +160,7 @@ const Speakers = () => {
             </div>
             <div className="popup-description">
               <h2 className="speaker-name">{selectedPerson.name}</h2>
-              <p>{selectedPerson.description}</p>
+              <p style={{ whiteSpace: 'pre-line' }}>{selectedPerson.description}</p>
             </div>
           </div>
         </div>
